@@ -394,6 +394,13 @@ public class HW1 {
 
 		//Create the path to the directory with the file
 		String dir = System.getProperty("user.dir");
+		
+		//Case of input for file
+		if (args.length > 1) 
+		{
+			file = "/" + args[0];
+		}
+		
 		String filePath = dir + file;
 		//Go through the file byte by byte and convert to a binary string
 		
